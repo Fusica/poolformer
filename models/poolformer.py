@@ -158,6 +158,7 @@ class Mlp(nn.Module):
 
 
 class PoolFormerBlock(nn.Module):
+    
     """
     Implementation of one PoolFormer block.
     --dim: embedding dim
@@ -596,3 +597,5 @@ if has_mmseg and has_mmdet:
                 layer_scale_init_value=1e-6, 
                 fork_feat=True,
                 **kwargs)
+
+
